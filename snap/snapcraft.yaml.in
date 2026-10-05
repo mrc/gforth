@@ -151,7 +151,6 @@ parts:
       - texinfo
       - git
       - g++
-      - yodl
       - bison
       - libpcre3-dev
       - libboost-dev
