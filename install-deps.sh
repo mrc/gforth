@@ -67,8 +67,8 @@ install_osx() {
   which brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   brew update > /dev/null
   brew upgrade > /dev/null
-  brew install gcc harfbuzz texinfo xz mesa premake automake libtool
-  export PATH="/usr/local/opt/texinfo/bin:$PATH"
+  brew install gcc harfbuzz texinfo xz mesa premake automake libtool pcre
+  export PATH="$(brew --prefix texinfo)/bin:$PATH"
   brew install --cask xquartz mactex
   export PATH="/Library/TeX/texbin:$PATH"
   brew link --overwrite gcc
